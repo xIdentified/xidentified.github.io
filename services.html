@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | 716 Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tech-focused Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo"><span class="logo-number">716</span> TECH SOLUTIONS</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="services.html">SERVICES</a>
+                <a href="reviews.html">REVIEWS</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="index.html#contact">CONTACT</a>
+                <a href="tel:+17165551234" class="phone-link">
+                    <i class="fas fa-phone"></i> (716) 555-1234
+                </a>
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://facebook.com/YourPage" target="_blank" class="social-icon" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-tag">COMPREHENSIVE SERVICES</div>
+            <h1>COMPLETE DEVICE REPAIR SOLUTIONS</h1>
+            <p class="hero-subtitle">From smartphones to gaming consoles, we repair it all with precision and care. <strong>FREE DIAGNOSTICS</strong> on every device.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-wrench"></i> REQUEST SERVICE</a>
+                <a href="tel:+17165551234" class="btn btn-secondary"><i class="fas fa-phone"></i> CALL NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Repair Gallery -->
+    <section class="repair-gallery section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">OUR WORK</div>
+                <h2>Recent Repairs & Success Stories</h2>
+                <p class="section-subtitle">See actual repair results from our Buffalo workshop.</p>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-slider" id="gallerySlider">
+                    <div class="gallery-slide active">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="iPhone screen replacement">
+                        <div class="gallery-caption">iPhone 14 Pro Max Screen Replacement - Like New Condition</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Gaming console repair">
+                        <div class="gallery-caption">PS5 HDMI Port Repair - Restored to Full Functionality</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Laptop motherboard repair">
+                        <div class="gallery-caption">MacBook Pro Logic Board Repair - Saved from Water Damage</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Custom PC build">
+                        <div class="gallery-caption">Custom Gaming PC Build - High Performance Setup</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-controls">
+                    <button class="gallery-prev" id="galleryPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-next" id="galleryNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="gallery-dots" id="galleryDots">
+                    <span class="gallery-dot active"></span>
+                    <span class="gallery-dot"></span>
+                    <span class="gallery-dot"></span>
+                    <span class="gallery-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Same as index.html) -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">OUR SERVICES</div>
+                <h2>Specialized Device Repair</h2>
+                <p class="section-subtitle">High-precision repairs backed by lifetime warranty on all labor.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card sparkle-hover" onclick="location.href='#contact'">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>PHONE & TABLET REPAIR</h3>
+                    <p>Cracked screens, battery replacement, water damage recovery for all major brands and models.</p>
+                    <a href="#contact" class="btn-small">REQUEST REPAIR <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card sparkle-hover" onclick="location.href='#contact'">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>LAPTOP & COMPUTER</h3>
+                    <p>Hardware diagnostics, virus removal, data recovery, and performance optimization.</p>
+                    <a href="#contact" class="btn-small">REQUEST REPAIR <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card sparkle-hover" onclick="location.href='#contact'">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>GAME CONSOLE REPAIR</h3>
+                    <p>PS5, Xbox Series X/S, Nintendo Switch. HDMI ports, disc drives, overheating solutions.</p>
+                    <a href="#contact" class="btn-small">REQUEST REPAIR <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Additional Detailed Services -->
+            <div class="services-detailed-grid" style="margin-top: 50px;">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Common Phone Repairs</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Screen Replacement (All Models)</li>
+                        <li><i class="fas fa-check-circle"></i> Battery Replacement</li>
+                        <li><i class="fas fa-check-circle"></i> Charging Port Repair</li>
+                        <li><i class="fas fa-check-circle"></i> Camera Repair</li>
+                        <li><i class="fas fa-check-circle"></i> Water Damage Recovery</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Computer Services</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Virus & Malware Removal</li>
+                        <li><i class="fas fa-check-circle"></i> Hardware Diagnostics</li>
+                        <li><i class="fas fa-check-circle"></i> Data Backup & Recovery</li>
+                        <li><i class="fas fa-check-circle"></i> Operating System Install</li>
+                        <li><i class="fas fa-check-circle"></i> Performance Tuning</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming Console Repairs</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> HDMI Port Replacement</li>
+                        <li><i class="fas fa-check-circle"></i> Disc Drive Repair</li>
+                        <li><i class="fas fa-check-circle"></i> Overheating Solutions</li>
+                        <li><i class="fas fa-check-circle"></i> Controller Repair</li>
+                        <li><i class="fas fa-check-circle"></i> Power Supply Issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Touch Section -->
+    <section class="personal-section section">
+        <div class="container">
+            <div class="personal-wrapper">
+                <div class="personal-image">
+                    <div class="avatar-frame">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Your Name, Technician at 716 Tech Solutions">
+                        <div class="avatar-badge">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="personal-signature">
+                        <span class="signature-line">Your Name Here</span>
+                        <span class="signature-title">Lead Technician & Founder</span>
+                    </div>
+                </div>
+                
+                <div class="personal-content">
+                    <div class="section-tag">PERSONAL SERVICE</div>
+                    <h2>One Technician, One Standard of Excellence</h2>
+                    <p>When you call 716 Tech Solutions, you're speaking directly with me – the person who will be repairing your device. No middlemen, no corporate runaround, just honest service from someone who cares about your tech as much as you do.</p>
+                    
+                    <div class="personal-features">
+                        <div class="personal-feature">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Direct Communication</h4>
+                                <p>I handle all customer interactions personally, from initial quote to final testing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-feature">
+                            <i class="fas fa-fingerprint"></i>
+                            <div>
+                                <h4>Personal Accountability</h4>
+                                <p>Every repair is signed off by me, with my personal guarantee of quality.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Passion-Driven Service</h4>
+                                <p>This isn't just a business – it's my craft. I take pride in every device I restore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-cta">
+                        <a href="tel:+17165551234" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Call Me Directly
+                        </a>
+                        <span class="phone-note">(716) 555-1234</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">GET IN TOUCH</div>
+                <h2>Contact Us</h2>
+                <p class="section-subtitle">Ready to fix your device? Send us a message and we'll respond within 2 hours.</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">YOUR NAME *</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">EMAIL ADDRESS *</label>
+                            <input type="email" id="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" placeholder="(716) 555-1234">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="device">DEVICE TYPE *</label>
+                        <select id="device" required>
+                            <option value="">Select device type</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="tablet">Tablet</option>
+                            <option value="laptop">Laptop</option>
+                            <option value="console">Game Console</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="issue">DESCRIBE THE ISSUE *</label>
+                        <textarea id="issue" placeholder="Please describe the problem with your device in detail..." rows="4" required></textarea>
+                    </div>
+                    
+                    <!-- reCAPTCHA v2 -->
+                    <div class="captcha-container">
+                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+                        <p class="captcha-note"><small>This helps us prevent spam submissions.</small></p>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                    <p id="formFeedback"></p>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> SERVICE AREA</h3>
+                        <p>Buffalo & Western New York<br>Mobile service available in select areas</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> BUSINESS HOURS</h3>
+                        <p>Monday - Friday: 9AM - 7PM<br>Saturday: 10AM - 4PM<br>Sunday: Emergency only</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> CONTACT DIRECT</h3>
+                        <p class="phone-large">(716) 555-1234</p>
+                        <p>contact@716techsolutions.com</p>
+                        <div class="contact-social">
+                            <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2><i class="fas fa-satellite-dish"></i> TECH INSIGHTS NEWSLETTER</h2>
+                <p>Get monthly tech tips, security alerts, workshop announcements, and exclusive member discounts. No spam, just value.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+                        <button type="submit" class="newsletter-btn">SUBSCRIBE <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <p id="newsletterFeedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo"><span class="logo-number">716</span> TECH SOLUTIONS</a>
+                    <p class="footer-description">Precision electronic repair services for Western New York. Professional diagnostics, honest pricing, lifetime warranty.</p>
+                    <div class="small-biz-badge">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Proudly Serving Western NY as a Local, Owner-Operated Business</span>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="reviews.html">Customer Reviews</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>CONTACT INFO</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> (716) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> contact@716techsolutions.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Serving Buffalo & Western NY</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-7PM | Sat: 10AM-4PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>CONNECT WITH US</h3>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/YourPage" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-google"></i> Google Business
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-yelp"></i> Yelp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> 716 TECH SOLUTIONS. ALL RIGHTS RESERVED.</p>
+                <p class="footer-legal">
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms of Service</a> | 
+                    <a href="#">Repair Warranty</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- reCAPTCHA API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <script src="script.js"></script>
+    <script>
+        // Gallery Slider
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.gallery-slide');
+            const dots = document.querySelectorAll('.gallery-dot');
+            const prevBtn = document.getElementById('galleryPrev');
+            const nextBtn = document.getElementById('galleryNext');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+            
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+            
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+            
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            function stopAutoSlide() {
+                clearInterval(slideInterval);
+            }
+            
+            if (prevBtn) prevBtn.addEventListener('click', () => {
+                prevSlide();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+            
+            if (nextBtn) nextBtn.addEventListener('click', () => {
+                nextSlide();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+            });
+            
+            // Auto-advance every 5 seconds
+            startAutoSlide();
+        });
+    </script>
+</body>
+</html>
